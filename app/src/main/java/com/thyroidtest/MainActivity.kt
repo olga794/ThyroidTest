@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.thyroidtest.ui.theme.ThyroidTestTheme
+import com.thyroidtest.views.HomeView
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,10 +21,12 @@ class MainActivity : ComponentActivity() {
         setContent {
             ThyroidTestTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+
+                    //Greeting(
+                    //    name = "Android",
+                    //    modifier = Modifier.padding(innerPadding)
+                    //)
+                    HomeView()
                 }
             }
         }
